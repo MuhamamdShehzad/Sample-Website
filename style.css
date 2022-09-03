@@ -1,0 +1,234 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    font-size: 6.25%;
+    /* 100% =16px
+    50%=8px
+    25%=4px
+    12.5%=2px
+    6.25%=1px */
+}
+
+/*Header*/
+header {
+    /* position: relative; */
+    /* background-color: wheat; */
+    height: 100rem;
+    font-family: "Ubuntu", sans-serif;
+    display: flex;
+}
+
+header img {
+    height: 90rem;
+    margin: 13rem;
+}
+
+.header-bar {
+    
+    position: sticky;
+    top: 0;
+    align-items: center;
+}
+
+.header-bar::before {
+    content: "";
+    background-color: linen;
+    position: absolute;
+    top: 0rem;
+    left: 0rem;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.7;
+}
+
+.header-bar li {
+    
+    margin: 20rem 15rem;
+    padding: 16rem 8rem;
+    list-style: none;
+}
+
+.header-bar li a {
+    text-decoration: none;
+    font-size: 23rem;
+    color: black;
+    padding: 3rem 12rem;
+    border-radius: 20rem;
+}
+
+.header-bar li a:hover,
+.header-bar li a:active {
+    color: white;
+    background-color: black;
+
+    cursor: pointer;
+}
+
+
+/*Home Section*/
+#home {
+    display: flex;
+}
+
+#home::before {
+    content: "";
+    position: absolute;
+    background: url("/pexels-hasan-albari-1229861.jpg") no-repeat center center/cover;
+    height: 1000rem;
+    top: 0rem;
+    left: 0rem;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.89;
+}
+
+#tag-line h1 {
+    font-family: "Ubuntu", sans-serif;
+    margin: 140rem 34rem;
+    padding: 36rem 76rem;
+    color: white;
+    font-size: 40rem;
+}
+
+#tag-line p {
+    position: absolute;
+    font-family: "Ubuntu", sans-serif;
+    margin: -185rem 34rem;
+    padding: 36rem 76rem;
+    color: white;
+    font-size: 20rem;
+    width: 478rem;
+}
+
+/*Services Section*/
+.services-container {
+    margin-top: 480rem;
+    padding: 12rem 15rem;
+}
+
+.services-container h1,
+.contact h1 {
+    display: block;
+    margin: 18rem auto;
+    height: 46rem;
+    width: 263rem;
+    font-size: 40rem;
+    font-family: "Ubuntu", sans-serif;
+}
+
+#services {
+    margin: 34rem;
+    display: flex;
+}
+
+#services .box {
+    border: 2rem solid green;
+    padding: 12rem 15rem;
+    margin: -1rem 8rem;
+    border-radius: 14rem;
+}
+
+#services img {
+    height: 270rem;
+    width: 352rem;
+    margin: 15rem auto;
+    display: block;
+}
+
+#services h2 {
+    font-family: "Ubuntu", sans-serif;
+    font-size: 30rem;
+    display: block;
+    margin: 19rem auto;
+    width: 206rem;
+}
+
+#services p {
+    font-size: 20rem;
+    display: block;
+    width: 352rem;
+    margin: 19rem auto;
+}
+
+#services .btn1,
+.contact-box .btn1 {
+    font-size: 27rem;
+    display: block;
+    width: 170rem;
+    margin: 19rem auto;
+    border: 2rem solid black;
+    border-radius: 20rem;
+    background-color: white;
+}
+
+#services .btn1:hover,
+.contact-box .btn1:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+
+/*Contact Section*/
+.contact-box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 34rem;
+    border: 2rem solid black;
+    border-radius: 20rem;
+    height: 381rem;
+    width: 331rem;
+    margin: 34rem auto;
+}
+
+.contact-box label {
+    margin-top: 34rem;
+    font-size: 20rem;
+    padding: 3rem 20rem;
+}
+
+.contact-box input {
+    margin-top: 14rem;
+    font-size: 20rem;
+    padding: 6rem 9rem;
+    border: 2rem solid black;
+    border-radius: 20rem;
+}
+
+.contact-box textarea {
+    margin-top: -4rem;
+    font-size: 20rem;
+    padding: 12rem 13rem;
+    border: 2rem solid black;
+    border-radius: 20rem;
+    width: 246rem;
+    margin-left: 103rem;
+}
+
+/*Footer Section*/
+footer {
+    height: 50rem;
+    background-color: black;
+    width: auto;
+}
+
+footer div {
+    display: flex;
+    width: 500rem;
+    padding: 12rem 13rem;
+    margin: 0 auto;
+    background-color: black;
+    color: white;
+    font-size: 20rem;
+}
+
+/* @media(max-width:1270px) {
+    html{
+        font-size: 5%;
+    }
+} */
+
